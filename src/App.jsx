@@ -5,7 +5,19 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Iris Arts</h1>
+      </header>
+      <main>
+        <h2>hero</h2>
+      </main>
+      <footer>
+        <h3>footer</h3>
+      </footer>
+    </div>
+  );
 }
 
 export default App;
