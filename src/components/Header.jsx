@@ -4,10 +4,15 @@ const Header = () => {
       <div className="row">
         <div className="col-12">
           <header id="header-wrapper">
-            <div id="header-logo"></div>
+            <div id="header-logo">
+              <img
+                className="img-fluid"
+                src="/src/assets/images/logo_transparent.png"
+                alt="logo"
+              />
+            </div>
             <div id="header-text">
-              <h1>Iris Arts</h1>
-              <h2>""In every drawing there's a story""</h2>
+              <h2>"In every drawing there's a story"</h2>
             </div>
           </header>
         </div>
