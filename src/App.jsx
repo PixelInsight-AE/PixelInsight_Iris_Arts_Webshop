@@ -2,6 +2,8 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import NavBar from "./components/Navigation";
+
 import "./App.css";
 
 // ! Home parent component
@@ -51,22 +53,7 @@ const Contact = () => {
   );
 };
 
-const NavBar = () => {
-  return (
-    <nav></nav>
-      <Link className="nav-btn" to="/">
-        Home
-      </Link>
-      <Link className="nav-btn" to="/about/">
-        About
-      </Link>
-      <Link className="nav-btn" to="/contact/">
-        Contact
-      </Link>
-    </nav>
-  );
-};
-
+// ! App component
 function App() {
   return (
     <Router>
