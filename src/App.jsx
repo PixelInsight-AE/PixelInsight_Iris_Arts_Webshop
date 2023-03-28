@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import NavBar from "./components/Navigation";
+import Header from "./components/Header";
 
 import "./App.css";
 
@@ -57,11 +58,14 @@ const Contact = () => {
 function App() {
   return (
     <Router>
+      <Header />
       <NavBar />
 
       <Route path="/" exact component={Home} />
       <Route path="/about/" component={About} />
       <Route path="/contact/" component={Contact} />
+
+      {/* //! Here goes footer component which also stays the same across all tabs */}
     </Router>
   );
 }
