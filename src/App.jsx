@@ -1,23 +1,27 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"; // ? npm install react-router-dom - May be of use later
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "./App.css";
 
+// ! Home parent component
+// ? header and nav in main App component i guess?
 const Home = () => {
   return (
-    <>
-      /* Header component */
-      <header>
-        {" "}
-        {/* //? Banner for background img */}
-        <h1>Iris Arts</h1>
-        <h2>""In every drawing there's a story""</h2>
-      </header>
-    </>
+    <div className="container">
+      <div className="row">
+        {/* // ! In here would go components at the col-?? level */}
+        {/* // ? <Hero />  col-8.... */}
+        {/* // ? <MissionStatement />  col-4..... */}
+      </div>
+      <div className="row"></div>
+      <div className="row"></div>
+      <div className="row"></div>
+    </div>
   );
 };
 
+// ! about component
 const About = () => {
   return (
     <>
@@ -32,6 +36,7 @@ const About = () => {
   );
 };
 
+// ! contact component
 const Contact = () => {
   return (
     <>
@@ -46,40 +51,31 @@ const Contact = () => {
   );
 };
 
-const Gallery = () => {
+const NavBar = () => {
   return (
-    <>
-      /* Header component */
-      <header>
-        {" "}
-        {/* //? Banner for background img */}
-        <h1>Gallery</h1>
-        <h2>""In every drawing there's a story""</h2>
-      </header>
-    </>
+    <nav></nav>
+      <Link className="nav-btn" to="/">
+        Home
+      </Link>
+      <Link className="nav-btn" to="/about/">
+        About
+      </Link>
+      <Link className="nav-btn" to="/contact/">
+        Contact
+      </Link>
+    </nav>
   );
 };
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Home}>
-            <Home />
-          </Route>
-          <Route path="/about" exact component={About}>
-            <About />
-          </Route>
-          <Route path="/contact" exact component={Contact}>
-            <Contact />
-          </Route>
-          <Route path="/gallery" exact component={Gallery}>
-            <Gallery />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <NavBar />
+
+      <Route path="/" exact component={Home} />
+      <Route path="/about/" component={About} />
+      <Route path="/contact/" component={Contact} />
+    </Router>
   );
 }
 
@@ -90,4 +86,6 @@ export default App;
  * ? https://getbootstrap.com/docs/5.0/layout/overview/
  *
  * ? carousel... Bootstrap 5 carousel tis time?
+ *
+ * ? How do we go about the bootstrap containers??? I guess they go in the parent components?....
  */
