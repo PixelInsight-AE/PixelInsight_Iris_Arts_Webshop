@@ -52,4 +52,7 @@ nav .nav-btn {
 nav .nav-btn:hover {
   background-color: #333;
   color: #fff;
+}
+nav .logo {
+  height: 50px;
 }/*# sourceMappingURL=App.css.map */
