@@ -38,6 +38,20 @@ const Contact = () => {
   );
 };
 
+const Gallery = () => {
+  return (
+    <>
+      /* Header component */
+      <header>
+        {" "}
+        {/* //? Banner for background img */}
+        <h1>Gallery</h1>
+        <h2>""In every drawing there's a story""</h2>
+      </header>
+    </>
+  );
+};
+
 // ! App component
 function App() {
   return (
@@ -48,6 +62,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/about/" component={About} />
       <Route path="/contact/" component={Contact} />
+      <Route path="/gallery/" component={Gallery} />
 
       {/* //! Here goes footer component which also stays the same across all tabs */}
     </Router>

@@ -4,10 +4,9 @@ const Hero = () => {
       <h2 id="hero-text">In every drawing there's a story</h2>
       <img
         className="img-fluid"
-        src="src/assets/images/tekening_myheartgrenadeinpieces_digitaal_2022_JPEG.jpg"
+        src="src/assets/images/card_15.jpg"
         alt="image here"
       />
-      <p>some text?</p>
     </div>
   );
 };
@@ -16,6 +15,7 @@ const Text = () => {
   return (
     <div className="col-4">
       <h1>Over Mij</h1>
+
       <p>
         Welkom ! z Je snuffelt rond op de website van Iris arts. Ik ben een
         kunstenares die tekeningen/kunst maakt naast haar vaste job. Ik hou
@@ -35,10 +35,140 @@ const Text = () => {
   );
 };
 
+const ScrollableRow = () => {
+  return (
+    <div id="scrollable-row">
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_02.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_03.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_04.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_05.png"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_06.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_07.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_01.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_08.png"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_09.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_10.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_11.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_12.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_13.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_14.jpg"
+        alt=""
+      />
+      <img
+        className="img-fluid card"
+        src="/src/assets/images/card_15.jpg"
+        alt=""
+      />
+    </div>
+  );
+};
+
 const Carousel = () => {
   return (
     <div className="col-12">
-      <h1>Carousel</h1>
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src="/src/assets/images/tekening_freedomfighter_digitaal_PNG.png"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="src/assets/images/tekening_giraffe_balpen_JPEG.jpg"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="src/assets/images/tekening_leeuw_balpen_JPEG.jpg"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
   );
 };
@@ -51,7 +181,9 @@ const Home = () => {
         <Hero />
         <Text />
       </div>
-      <div className="row"></div>
+      <div className="row">
+        <ScrollableRow />
+      </div>
       <div className="row"></div>
       <div className="row"></div>
     </div>
