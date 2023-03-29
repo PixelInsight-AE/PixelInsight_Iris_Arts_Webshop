@@ -224,7 +224,7 @@ const Home = () => {
         <Text />
       </div>
       <div id="divider-image">
-        <img src="/src/assets/images/infiinityflower3.png" alt="yep" />
+        <img src="https://i.imgur.com/W6LNlGE.png" alt="yep" />
       </div>
 
       <div className="row">
