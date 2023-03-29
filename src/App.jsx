@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import NavBar from "./components/Navigation";
+import About from "./components/About";
+import Shop from "./components/Shop";
 import Footer from "./components/Footer";
+
 import "./Shop.css";
 import "./App.css";
 import { TypeAnimation } from "react-type-animation";
@@ -31,19 +34,6 @@ const ExampleComponent = () => {
   );
 };
 // ! about component
-const About = () => {
-  return (
-    <>
-      <header>
-        {" "}
-        {/* //? Banner for background img */}
-        <h1>About</h1>
-        <h>""In every drawing there's a story""</h>2
-        <ExampleComponent />
-      </header>
-    </>
-  );
-};
 
 // ! contact component
 const Contact = () => {
@@ -62,17 +52,6 @@ const Gallery = () => {
     <>
       <header>
         <h1>Gallery</h1>
-        <h2>"In every drawing there's a story"</h2>
-      </header>
-    </>
-  );
-};
-
-const Shop = () => {
-  return (
-    <>
-      <header>
-        <h1>COMING SOON!</h1>
         <h2>"In every drawing there's a story"</h2>
       </header>
     </>
