@@ -1,3 +1,5 @@
+import { TypeAnimation } from "react-type-animation";
+
 const Hero = () => {
   return (
     <div id="hero-section" className="col-8">
@@ -31,10 +33,44 @@ const Text = () => {
         Neem hier een kijkje naar wat ik allemaal doe ‘ galerij ‘
       </p>
       <div className="icons-wrapper">
-        <h3>Connect with me through social media!</h3>
         <div>
-          <i className="social-media-1 fab fa-facebook-square fa-4x me-5"></i>
-          <i className="social-media fab fa-instagram-square fa-4x"></i>
+          <TypeAnimation
+            className="type-animation"
+            sequence={[
+              "C.",
+              1500,
+              "Connect with me",
+              2500,
+              "Connect with me on social media",
+              2000,
+              // "Connect with me through social media",
+              () => {
+                let trigger = false;
+                trigger = !trigger;
+                console.log("Sequence completed");
+              },
+            ]}
+            wrapper="span"
+            cursor={false}
+            repeat={Infinity}
+            style={{
+              fontFamily: "Dancing Script",
+              fontSize: "2em",
+              display: "inline-block",
+            }}
+          />
+        </div>
+        {/* <h3>Connect with me through social media!</h3> */}
+        <div className="social-media">
+          <a href="https://www.facebook.com/IrisArtss" target="_blank">
+            <i className="social-media-icons fab fa-facebook-square fa-4x me-5"></i>
+          </a>
+          <a
+            href="https://instagram.com/_iris_arts?igshid=YmMyMTA2M2Y="
+            target="_blank"
+          >
+            <i className="social-media-icons fab fa-instagram-square fa-4x"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -186,6 +222,9 @@ const Home = () => {
       <div className="row">
         <Hero />
         <Text />
+      </div>
+      <div id="divider-image">
+        <img src="/src/assets/images/infiinityflower3.png" alt="yep" />
       </div>
 
       <div className="row">

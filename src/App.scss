@@ -9,14 +9,14 @@ $color-two: #d6b9ba;
   height: 100%;
   width: 100%;
 }
+.social-media-icons {
+  -webkit-text-stroke: 1px #000;
+  color: #d5bad6;
+}
 .social-media {
-  -webkit-text-stroke: 1px #000;
-  color: #d5bad6;
+  padding-top: 2rem;
 }
-.social-media-1 {
-  -webkit-text-stroke: 1px #000;
-  color: #d5bad6;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -91,6 +91,15 @@ nav {
 
   .logo {
     height: 75px;
+  }
+}
+
+#divider-image {
+  img {
+    margin-top: -200px;
+    margin-bottom: -100px;
+    width: 100%;
+    transform: scaleY(0.5);
   }
 }
 
@@ -179,14 +188,17 @@ nav {
 .icons-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  h3 {
+  // h3 {
+  //   font-family: "Dancing Script", cursive;
+  //   text-align: center;
+  //   font-size: 2rem;
+  //   margin-top: 4rem;
+  // }
+  span {
     font-family: "Dancing Script", cursive;
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 4rem;
   }
 }
 

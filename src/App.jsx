@@ -8,17 +8,38 @@ import NavBar from "./components/Navigation";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import { TypeAnimation } from "react-type-animation";
 
+const ExampleComponent = () => {
+  return (
+    <TypeAnimation
+      sequence={[
+        "One", // Types 'One'
+        1000, // Waits 1s
+        "Two", // Deletes 'One' and types 'Two'
+        2000, // Waits 2s
+        "Two Three", // Types 'Three' without deleting 'Two'
+        () => {
+          console.log("Sequence completed");
+        },
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      style={{ fontSize: "2em", display: "inline-block" }}
+    />
+  );
+};
 // ! about component
 const About = () => {
   return (
     <>
-      /* Header component */
       <header>
         {" "}
         {/* //? Banner for background img */}
         <h1>About</h1>
-        <h2>""In every drawing there's a story""</h2>
+        <h>""In every drawing there's a story""</h>2
+        <ExampleComponent />
       </header>
     </>
   );
@@ -28,7 +49,6 @@ const About = () => {
 const Contact = () => {
   return (
     <>
-      /* Header component */
       <header>
         {" "}
         {/* //? Banner for background img */}
@@ -42,7 +62,6 @@ const Contact = () => {
 const Gallery = () => {
   return (
     <>
-      /* Header component */
       <header>
         {" "}
         {/* //? Banner for background img */}

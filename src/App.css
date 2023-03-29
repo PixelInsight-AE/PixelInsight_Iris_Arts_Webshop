@@ -6,14 +6,13 @@
   width: 100%;
 }
 
-.social-media {
+.social-media-icons {
   -webkit-text-stroke: 1px #000;
   color: #d5bad6;
 }
 
-.social-media-1 {
-  -webkit-text-stroke: 1px #000;
-  color: #d5bad6;
+.social-media {
+  padding-top: 2rem;
 }
 
 body {
@@ -80,6 +79,13 @@ nav .nav-btn:hover {
 }
 nav .logo {
   height: 75px;
+}
+
+#divider-image img {
+  margin-top: -200px;
+  margin-bottom: -100px;
+  width: 100%;
+  transform: scaleY(0.5);
 }
 
 #hero-section {
@@ -164,15 +170,12 @@ nav .logo {
 .icons-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
 }
-.icons-wrapper h3 {
+.icons-wrapper span {
   font-family: "Dancing Script", cursive;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 4rem;
 }
 
 footer {
