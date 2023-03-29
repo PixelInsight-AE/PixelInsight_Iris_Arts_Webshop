@@ -7,7 +7,7 @@ const Header = () => {
             <div id="header-logo">
               <img
                 className="img-fluid"
-                src="./src/assets/images/logo_transparent.png"
+                src="https://i.imgur.com/AxNZLFZ.png"
                 alt="logo"
               />
             </div>

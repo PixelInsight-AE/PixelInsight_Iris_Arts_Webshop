@@ -6,7 +6,7 @@ const Hero = () => {
       <h2 id="hero-text">In every drawing there's a story</h2>
       <img
         className="img-fluid"
-        src="./src/assets/images/card_15.jpg"
+        src="https://i.imgur.com/ZtjK7zy.jpeg"
         alt="image here"
       />
     </div>
@@ -82,7 +82,7 @@ const ScrollableRow = () => {
     <div id="scrollable-row">
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_02.jpg"
+        src="https://i.imgur.com/49q3NGc.jpeg"
         alt=""
       />
       <img
