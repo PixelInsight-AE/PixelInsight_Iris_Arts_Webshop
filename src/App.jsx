@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import NavBar from "./components/Navigation";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -64,6 +65,7 @@ function App() {
       <Route path="/contact/" component={Contact} />
       <Route path="/gallery/" component={Gallery} />
 
+      <Footer />
       {/* //! Here goes footer component which also stays the same across all tabs */}
     </Router>
   );

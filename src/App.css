@@ -7,7 +7,12 @@
 }
 
 .social-media {
-  -webkit-text-stroke: #000;
+  -webkit-text-stroke: 1px #000;
+  color: #d5bad6;
+}
+
+.social-media-1 {
+  -webkit-text-stroke: 1px #000;
   color: #d5bad6;
 }
 
@@ -51,14 +56,15 @@ body {
 }
 
 nav {
+  font-family: "Dancing Script", cursive;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 nav .nav-btn {
   color: #333;
@@ -73,7 +79,7 @@ nav .nav-btn:hover {
   color: #fff;
 }
 nav .logo {
-  height: 50px;
+  height: 75px;
 }
 
 #hero-section {
@@ -82,7 +88,7 @@ nav .logo {
 }
 #hero-section #hero-text {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -90,6 +96,7 @@ nav .logo {
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Dancing Script", cursive;
 }
 #hero-section img {
   width: 100%;
@@ -97,7 +104,7 @@ nav .logo {
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid grey;
-  border-radius: 15%;
+  border-radius: 5rem 0 0 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -125,4 +132,49 @@ nav .logo {
   text-align: center;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+#over-mij {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: radial-gradient(ellipse farthest-corner at center, #ffffff, #f8d3d3);
+  border-radius: 0 5rem 5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#over-mij h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#over-mij h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#over-mij p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.icons-wrapper h3 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=App.css.map */

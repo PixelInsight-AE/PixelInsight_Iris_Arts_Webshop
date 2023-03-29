@@ -22,9 +22,8 @@ const NavBar = () => {
       <Link className="nav-btn" to="/contact/">
         Contact
       </Link>
-      <Link className="nav-btn" to="/">
-        <i className="social-media fab fa-instagram-square fa-2x me-2"></i>
-        <i className="social-media fab fa-facebook-square fa-2x"></i>
+      <Link className="nav-btn" to="/login/">
+        Shop
       </Link>
     </nav>
   );
