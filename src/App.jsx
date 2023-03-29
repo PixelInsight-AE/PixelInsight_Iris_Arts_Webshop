@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 
 import "./Shop.css";
 import "./App.css";
+import "./About.css";
 import { TypeAnimation } from "react-type-animation";
 
 const Gallery = () => {
