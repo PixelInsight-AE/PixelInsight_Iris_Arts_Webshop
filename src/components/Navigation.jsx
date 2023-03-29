@@ -13,7 +13,7 @@ const NavBar = () => {
         <div>
           <img
             className="img-fluid logo"
-            src="src/assets/images/logo_transparent.png"
+            src="./src/assets/images/logo_transparent.png"
             alt="logo"
           />
           <div>Gallery</div>

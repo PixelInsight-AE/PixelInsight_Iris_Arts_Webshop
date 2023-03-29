@@ -4,7 +4,7 @@ const Hero = () => {
       <h2 id="hero-text">In every drawing there's a story</h2>
       <img
         className="img-fluid"
-        src="src/assets/images/card_15.jpg"
+        src="./src/assets/images/card_15.jpg"
         alt="image here"
       />
     </div>
@@ -46,77 +46,77 @@ const ScrollableRow = () => {
     <div id="scrollable-row">
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_02.jpg"
+        src="./src/assets/images/card_02.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_03.jpg"
+        src="./src/assets/images/card_03.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_04.jpg"
+        src="./src/assets/images/card_04.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_05.png"
+        src="./src/assets/images/card_05.png"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_06.jpg"
+        src="./src/assets/images/card_06.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_07.jpg"
+        src="./src/assets/images/card_07.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_01.jpg"
+        src="./src/assets/images/card_01.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_08.png"
+        src="./src/assets/images/card_08.png"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_09.jpg"
+        src="./src/assets/images/card_09.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_10.jpg"
+        src="./src/assets/images/card_10.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_11.jpg"
+        src="./src/assets/images/card_11.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_12.jpg"
+        src="./src/assets/images/card_12.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_13.jpg"
+        src="./src/assets/images/card_13.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_14.jpg"
+        src="./src/assets/images/card_14.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="/src/assets/images/card_15.jpg"
+        src="./src/assets/images/card_15.jpg"
         alt=""
       />
     </div>
