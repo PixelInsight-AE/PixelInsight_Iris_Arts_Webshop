@@ -1,51 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   color: #333;
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
 }
-main .about-me-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8d3d3;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 0;
-  width: 100%;
-}
-main .about-me-card h1 {
-  font-size: 2rem;
-  margin-bottom: 0;
-  font-weight: 300;
-}
 main .about-me-card .about-me-img {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 90%;
+  border-radius: 10% 0 0 10%;
   border: 1px solid #333;
-  border-radius: 10%;
-  margin-right: 2rem;
-  padding: 0;
   overflow: hidden;
-}
-main .about-me-card .about-me-img .flower-image {
-  margin-left: 100px;
+  padding: 1rem;
 }
 main .about-me-card .about-me-info {
-  text-align: center;
-  font-size: 1.5rem;
+  max-width: 98%;
+  text-align: right;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
-main .about-me-card .about-me-info p {
-  margin-top: 0;
+main .about-me-card .about-me-info h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+main .about-me-card .right-side-box {
+  background-color: #f8d3d3;
+  border-radius: 0 15% 15% 0;
+  border: 1px solid #333;
+}
+main .about-me-card .right-side-box h1 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+main .about-me-card .left-side-box {
+  background-color: #f8d3d3;
+  border-radius: 15% 0 0 15%;
+  border: 1px solid #333;
 }/*# sourceMappingURL=About.css.map */
