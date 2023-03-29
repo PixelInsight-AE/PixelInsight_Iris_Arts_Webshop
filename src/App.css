@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noteworthy");
 #root {
   margin: 0;
   padding: 0;
@@ -23,22 +24,29 @@ body {
 }
 
 #header-wrapper {
-  font-family: "Dancing Script", cursive;
-  margin-top: 4rem;
-  height: 200px;
+  font-family: "dancing script", cursive;
+  font-weight: lighter;
+  height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: radial-gradient(ellipse farthest-corner at center, #d5bad6, #f5c6e0);
+  /*   background: radial-gradient(
+    ellipse farthest-corner at center,
+    #d5bad6,   hello
+    #f5c6e0
+  ); */
+  background-color: #f8d3d3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #header-logo img {
   height: 300px;
+  margin-top: 3rem;
 }
 
 #header-text {
+  margin-right: 300px;
   text-align: center;
 }
 
@@ -60,9 +68,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 nav .nav-btn {

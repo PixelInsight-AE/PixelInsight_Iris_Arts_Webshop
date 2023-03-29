@@ -16,8 +16,8 @@ const Hero = () => {
 const Text = () => {
   return (
     <div id="over-mij" className="col-4">
-      <h1>Over Mij</h1>
-      <h2>Welkom! Je snuffelt rond op de website van Iris arts.</h2>
+      <h1>Welkom!</h1>
+      <h2>Je snuffelt rond op de website van Iris arts.</h2>
       <p>
         Ik ben een kunstenares die tekeningen/kunst maakt naast haar vaste job.
         Ik hou ervan om met verschillende materialen te werken. Zo werk ik
@@ -82,77 +82,77 @@ const ScrollableRow = () => {
     <div id="scrollable-row">
       <img
         className="img-fluid card"
-        src="https://i.imgur.com/49q3NGc.jpeg"
+        src="https://i.imgur.com/HelgYu3.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_03.jpg"
+        src="https://i.imgur.com/hESMbp6.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_04.jpg"
+        src="https://i.imgur.com/9fc34ak.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_05.png"
+        src="https://i.imgur.com/ZLwBIk5.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_06.jpg"
+        src="https://i.imgur.com/I50ya4j.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_07.jpg"
+        src="https://i.imgur.com/QaXFbb6.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_01.jpg"
+        src="https://i.imgur.com/4BiJFk5.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_08.png"
+        src="https://i.imgur.com/zckbegQ.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_09.jpg"
+        src="https://i.imgur.com/Ht40QEw.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_10.jpg"
+        src="https://i.imgur.com/cmMB452.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_11.jpg"
+        src="https://i.imgur.com/HGDHsGQ.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_12.jpg"
+        src="https://i.imgur.com/G3uTYFA.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_13.jpg"
+        src="https://i.imgur.com/uPr5Gv4.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_14.jpg"
+        src="https://i.imgur.com/WljVJHo.jpg"
         alt=""
       />
       <img
         className="img-fluid card"
-        src="./src/assets/images/card_15.jpg"
+        src="https://i.imgur.com/9VpkQmR.jpg"
         alt=""
       />
     </div>
