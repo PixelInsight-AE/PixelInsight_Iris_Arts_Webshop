@@ -9,21 +9,10 @@ import About from "./components/About";
 import Shop from "./components/Shop";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
 
 import "./Shop.css";
 import "./App.css";
-import { TypeAnimation } from "react-type-animation";
-
-const Gallery = () => {
-  return (
-    <>
-      <header>
-        <h1>Gallery</h1>
-        <h2>"In every drawing there's a story"</h2>
-      </header>
-    </>
-  );
-};
 
 // ! App component
 function App() {

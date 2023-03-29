@@ -250,3 +250,30 @@ form {
     height: 50px;
   }
 }
+
+#gallery-component {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  h3 {
+    font-family: $font-heading;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    height: 50px;
+  }
+  .flex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .gallery-item {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+  }
+}
