@@ -3,7 +3,7 @@ const Header = () => {
     <div className="container-fluid">
       <div className="row">
         <div className="col-12 p-0">
-          <header id="header-wrapper">
+          <header>
             <div id="header-logo">
               <img
                 className="img-fluid"
@@ -11,7 +11,7 @@ const Header = () => {
                 alt="logo"
               />
             </div>
-            <div id="header-text">
+            <div>
               <h2>"In every drawing there's a story"</h2>
             </div>
           </header>

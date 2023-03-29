@@ -22,7 +22,7 @@ const NavBar = () => {
       <Link className="nav-btn" to="/contact/">
         Contact
       </Link>
-      <Link className="nav-btn" to="/login/">
+      <Link className="nav-btn" to="/shop/">
         Shop
       </Link>
     </nav>

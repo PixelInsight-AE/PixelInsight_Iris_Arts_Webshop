@@ -29,20 +29,13 @@ body {
   );
 }
 
-#header-wrapper {
+header {
   font-family: "dancing script", cursive;
-  font-weight: lighter;
-  //margin-top: 4rem;
   height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  /*   background: radial-gradient(
-    ellipse farthest-corner at center,
-    #d5bad6, 
-    #f5c6e0
-  ); */
   background-color: #f8d3d3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

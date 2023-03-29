@@ -6,7 +6,7 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import NavBar from "./components/Navigation";
 import Footer from "./components/Footer";
-
+import "./Shop.css";
 import "./App.css";
 import { TypeAnimation } from "react-type-animation";
 
@@ -50,10 +50,8 @@ const Contact = () => {
   return (
     <>
       <header>
-        {" "}
-        {/* //? Banner for background img */}
         <h1>Contact</h1>
-        <h2>""In every drawing there's a story""</h2>
+        <h2>"In every drawing there's a story"</h2>
       </header>
     </>
   );
@@ -63,10 +61,19 @@ const Gallery = () => {
   return (
     <>
       <header>
-        {" "}
-        {/* //? Banner for background img */}
         <h1>Gallery</h1>
-        <h2>""In every drawing there's a story""</h2>
+        <h2>"In every drawing there's a story"</h2>
+      </header>
+    </>
+  );
+};
+
+const Shop = () => {
+  return (
+    <>
+      <header>
+        <h1>COMING SOON!</h1>
+        <h2>"In every drawing there's a story"</h2>
       </header>
     </>
   );
@@ -83,6 +90,7 @@ function App() {
       <Route path="/about/" component={About} />
       <Route path="/contact/" component={Contact} />
       <Route path="/gallery/" component={Gallery} />
+      <Route path="/shop/" component={Shop} />
 
       <Footer />
       {/* //! Here goes footer component which also stays the same across all tabs */}
