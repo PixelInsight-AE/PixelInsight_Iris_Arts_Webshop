@@ -1,52 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+$color-complementary: #bad6c6;
+$color-two: #d6b9ba;
 
-main {
-  color: #333;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
+#about-me-info {
+  height: 100%;
+  border-radius: 0 5rem 5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(
+    ellipse farthest-corner at center,
+    #ffffff,
+    #f8d3d3
+  );
+  margin-top: 2rem;
+  padding: 1rem;
+  h1 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+  }
+  p {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+#about-me-img {
+  height: 100%;
+  position: relative;
+  //border: 2px solid grey;
+  border-radius: 5rem 0 0 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: radial-gradient(
+    ellipse farthest-corner at center,
+    $color-complementary,
+    $color-two
+  );
+  margin-top: 2rem;
 
-  .about-me-card {
-    .about-me-img {
-      max-width: 90%;
-      border-radius: 10% 0 0 10%;
-      //background-color: #f8d3d3;
-      border: 1px solid #333;
-      overflow: hidden;
-      padding: 1rem;
-    }
-    .about-me-info {
-      max-width: 98%;
-      //background-color: #f8d3d3;
-      text-align: right;
-      font-size: 1rem;
-      font-family: "Roboto", sans-serif;
-      //border: 1px solid #333;
-      overflow: hidden;
-      h1 {
-        font-size: 2rem;
-        font-weight: 300;
-      }
-    }
-    .about-me-flower {
-      //background-color: #f8d3d3;
+  img {
+    overflow: hidden;
+    border-radius: 5rem 0 0 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  hr {
+    width: 85%;
 
-      //border-radius: 0 15% 15% 0;
-      //border: 1px solid #333;
-    }
-    .right-side-box {
-      background-color: #f8d3d3;
-      border-radius: 0 15% 15% 0;
-      border: 1px solid #333;
-
-      h1 {
-        font-size: 2rem;
-        font-weight: 300;
-      }
-    }
-    .left-side-box {
-      background-color: #f8d3d3;
-      border-radius: 15% 0 0 15%;
-      border: 1px solid #333;
-    }
+    margin: auto;
+  }
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Dancing Script", cursive;
   }
 }
