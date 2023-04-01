@@ -39,8 +39,8 @@ function App() {
       <Route path="/gallery/" component={Gallery} />
       <Route path="/shop/" component={Shop} />
 
-      <Footer />
       {/* //! Here goes footer component which also stays the same across all tabs */}
+      <Footer />
     </Router>
   );
 }

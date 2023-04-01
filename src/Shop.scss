@@ -16,7 +16,11 @@ main {
     width: 60%;
     margin: auto;
     margin-top: 2rem;
-    background-color: #f8d3d3;
+    background: radial-gradient(
+      ellipse farthest-corner at center,
+      #ffffff,
+      #f8d3d3
+    );
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     h1 {
       padding: 2rem;
