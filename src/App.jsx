@@ -8,45 +8,12 @@ import NavBar from "./components/Navigation";
 import About from "./components/About";
 import Shop from "./components/Shop";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 import "./Shop.css";
 import "./App.css";
 import "./About.css";
 import { TypeAnimation } from "react-type-animation";
-
-const ExampleComponent = () => {
-  return (
-    <TypeAnimation
-      sequence={[
-        "One", // Types 'One'
-        1000, // Waits 1s
-        "Two", // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
-        "Two Three", // Types 'Three' without deleting 'Two'
-        () => {
-          console.log("Sequence completed");
-        },
-      ]}
-      wrapper="span"
-      cursor={true}
-      repeat={Infinity}
-      style={{ fontSize: "2em", display: "inline-block" }}
-    />
-  );
-};
-// ! about component
-
-// ! contact component
-const Contact = () => {
-  return (
-    <>
-      <header>
-        <h1>Contact</h1>
-        <h2>"In every drawing there's a story"</h2>
-      </header>
-    </>
-  );
-};
 
 const Gallery = () => {
   return (

@@ -1,70 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Noteworthy");
 #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.social-media-icons {
-  -webkit-text-stroke: 1px #000;
-  color: #d5bad6;
-}
-
-.social-media {
-  padding-top: 2rem;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
   background: radial-gradient(ellipse farthest-corner at center, #bad6c6, #d6b9ba);
 }
 
+/* Header (can be abstracted) */
 header {
-  font-family: "dancing script", cursive;
-  height: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  font-family: "Dancing Script", cursive;
   background-color: #f8d3d3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 250px;
 }
-
-#header-logo img {
+header #header-logo img {
   height: 300px;
   margin-top: 3rem;
 }
-
-#header-text {
-  margin-right: 300px;
-  text-align: center;
-}
-
-#header-text h1 {
-  font-size: 4rem;
-  margin: 0;
-}
-
-#header-text h2 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  margin-right: 4rem;
+header h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
   color: #888;
 }
 
+/* Navigation (can be abstracted) */
 nav {
-  font-family: "Dancing Script", cursive;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  font-size: 3rem;
-  font-weight: 600;
+  padding: 1rem;
 }
 nav .nav-btn {
   color: #333;
@@ -75,25 +51,21 @@ nav .nav-btn {
   transition: all 0.2s ease-in-out;
 }
 nav .nav-btn:hover {
-  background-color: #333;
+  transform: scale(1.1);
+  background-color: #f8d3d3;
   color: #fff;
 }
 nav .logo {
-  height: 75px;
+  height: 2em;
+  align-content: center;
 }
 
-#divider-image img {
-  margin-top: -200px;
-  margin-bottom: -100px;
-  width: 100%;
-  transform: scaleY(0.5);
-}
-
+/* Hero section */
 #hero-section {
   margin-top: 2rem;
   position: relative;
 }
-#hero-section #hero-text {
+#hero-section h2 {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -115,6 +87,59 @@ nav .logo {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#over-mij {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: radial-gradient(ellipse farthest-corner at center, #ffffff, #f8d3d3);
+  border-radius: 0 5rem 5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#over-mij h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#over-mij h2 {
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 1rem;
+}
+#over-mij .icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+#over-mij .icons-wrapper h3 {
+  font-family: "Dancing Script", cursive;
+  height: 50px;
+}
+#over-mij .icons-wrapper .social-media {
+  height: 25px;
+  padding-top: 2rem;
+}
+#over-mij .icons-wrapper .social-media-icons {
+  -webkit-text-stroke: 1px #000;
+  color: #d5bad6;
+  transition: ease-in-out 0.5s;
+}
+#over-mij .icons-wrapper .social-media-icons:hover {
+  color: #bad6c6;
+  -webkit-text-stroke: 1px #000;
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* Divider image */
+#divider-image img {
+  margin-top: -200px;
+  margin-bottom: -100px;
+  width: 100%;
+  transform: scaleY(0.5);
+}
+
+/* Scrollable row */
 #scrollable-row {
   display: flex;
   overflow-x: scroll;
@@ -132,55 +157,62 @@ nav .logo {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.5rem;
-}
-#scrollable-row .card .card-text {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-#over-mij {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: radial-gradient(ellipse farthest-corner at center, #ffffff, #f8d3d3);
-  border-radius: 0 5rem 5rem 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-#over-mij h1 {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-#over-mij h2 {
-  font-family: "Dancing Script", cursive;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-#over-mij p {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-.icons-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-}
-.icons-wrapper span {
-  font-family: "Dancing Script", cursive;
 }
 
 footer {
   margin-top: 2rem;
   padding: 1rem;
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+}
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+}
+form button {
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  background-color: #4d4ae8;
+}
+
+#contact {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+#contact h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  height: 50px;
 }/*# sourceMappingURL=App.css.map */

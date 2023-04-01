@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <div id="hero-section" className="col-8">
-      <h2 id="hero-text">In every drawing there's a story</h2>
+      <h2>In every drawing there's a story</h2>
       <img
         className="img-fluid"
         src="https://i.imgur.com/ZtjK7zy.jpeg"
@@ -37,26 +37,28 @@ const Text = () => {
           <TypeAnimation
             className="type-animation"
             sequence={[
-              "C.",
-              1500,
-              "Connect with me",
-              2500,
-              "Connect with me on social media",
+              "Follow me on social media",
+              1000,
+              "You can connect with me!",
+              2000,
+              "O",
+              1000,
+              "On Facebook",
+              500,
+              "Or on Instagram",
               2000,
               // "Connect with me through social media",
               () => {
-                let trigger = false;
-                trigger = !trigger;
                 console.log("Sequence completed");
               },
             ]}
-            wrapper="span"
+            wrapper="h3"
             cursor={false}
             repeat={Infinity}
             style={{
               fontFamily: "Dancing Script",
               fontSize: "2em",
-              display: "inline-block",
+              display: "block",
             }}
           />
         </div>
