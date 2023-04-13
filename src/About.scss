@@ -21,6 +21,19 @@ $color-two: #d6b9ba;
     text-align: center;
     padding: 1rem;
   }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    border-radius: 5rem;
+    margin-top: 0;
+    padding: 2rem;
+    h1 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      padding: 0;
+    }
+  }
 }
 #about-me-img {
   height: 100%;
@@ -53,5 +66,22 @@ $color-two: #d6b9ba;
     text-align: center;
     padding: 1rem;
     font-family: "Dancing Script", cursive;
+  }
+  @media (max-width: 767px) {
+    height: auto;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    img {
+      border-radius: 5rem 5rem 0 0;
+      height: 60%;
+    }
+    hr {
+      width: 100%;
+    }
+    p {
+      font-size: 1rem;
+      text-align: left;
+      padding: 0.5rem;
+    }
   }
 }
